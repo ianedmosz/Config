@@ -1,0 +1,195 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0.8);
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 12px;
+    margin: 5px 10px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces {
+    background: #313244;
+    margin: 5px;
+    padding: 0px 1px;
+    border-radius: 10px;
+    border: 0px;
+    font-style: normal;
+    color: #cdd6f4;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 4px 3px;
+    border-radius: 10px;
+    border: 0px;
+    color: #cdd6f4;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #1e1e2e;
+    background: #a6e3a1;
+    border-radius: 10px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: #1e1e2e;
+    background: #74c7ec;
+    border-radius: 10px;
+}
+
+/* Window title */
+#window {
+    background: #313244;
+    margin: 5px 5px 5px 0px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: #cdd6f4;
+}
+
+/* Clock */
+#clock {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* System tray */
+#tray {
+    background: #313244;
+    margin: 5px 5px 5px 0px;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f38ba8;
+}
+
+/* Audio */
+#pulseaudio {
+    background: #f9e2af;
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 5px 5px 5px 0px;
+}
+
+#pulseaudio.muted {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* Backlight */
+#backlight {
+    background: #fab387;
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 5px 5px 5px 0px;
+}
+
+/* Battery */
+#battery {
+    background: #a6e3a1;
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 2px 15px;
+    margin: 5px 5px 5px 0px;
+}
+
+#battery.charging {
+    color: #1e1e2e;
+    background-color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #f9e2af;
+    color: #1e1e2e;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #cdd6f4;
+        color: #1e1e2e;
+    }
+}
+
+/* Network */
+#network {
+    background: #74c7ec;
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 5px 5px 5px 0px;
+}
+
+#network.disconnected {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* Power button */
+#custom-power {
+    color: #f38ba8;
+    font-size: 18px;
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px 5px;
+    border: 2px solid #f38ba8;
+}
+
+#custom-power:hover {
+    color: #1e1e2e;
+    background: #f38ba8;
+    border: 2px solid #f38ba8;
+}
+
+/* Tooltip */
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #89b4fa;
+}
+
+tooltip label {
+    color: #cdd6f4;
+}
