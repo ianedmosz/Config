@@ -1,0 +1,42 @@
+# ~/.config/wofi/config
+# Configuración principal de wofi
+
+# Modo de operación (drun para aplicaciones, run para comandos, dmenu para entrada personalizada)
+mode=drun
+
+# Dimensiones de la ventana
+width=600
+height=400
+
+# Posición en la pantalla
+location=center
+
+# Permitir imágenes/iconos
+allow_images=true
+
+# Mostrar todas las aplicaciones (no solo las favoritas)
+show=drun
+
+# Prompt text
+prompt=Buscar aplicaciones...
+
+# Número de columnas
+columns=1
+
+# Insensible a mayúsculas/minúsculas
+insensitive=true
+
+# Permitir marcado (markup)
+allow_markup=true
+
+# No fork (ejecutar en primer plano)
+no_actions=true
+
+# Ocultar scroll bar
+hide_scroll=true
+
+# Configuración de matching
+matching=contains
+
+# Cache de aplicaciones
+cache_file=/dev/null
