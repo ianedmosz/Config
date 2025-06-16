@@ -1,0 +1,22 @@
+/**
+ * ShadowTheme Colors for Rofi
+ * The ultimate purple and pink dark cherry blossom theme!
+ */
+
+* {
+    background:     #191724;
+    background-alt: #140a1d;
+    foreground:     #e3c7fc;
+    selected:       #bd93f9;
+    active:         #F18FB0;
+    urgent:         #B52A5B;
+    
+    /* Additional colors */
+    accent:         #FF4971;
+    secondary:      #8897F4;
+    success:        #F18FB0;
+    warning:        #E9729D;
+    muted:          #a8899c;
+    surface:        #09090d;
+    border:         #f1c4e0;
+}
